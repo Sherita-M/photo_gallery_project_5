@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/baguetteBox.min.css" />
-    <title>Document</title>
+    <title>My Photo Gallery</title>
   </head>
   <body>
+    <!-- Search Feature -->
+    <form id="searchform" action="">
+      <input
+        type="search"
+        id="searchquery"
+        name="search"
+        placeholder="Search"
+        aria-label="Search the photo gallery"
+      />
+    </form>
     <!-- Photo Gallery Code Starts Here -->
     <div class="gallery">
       <!-- Photo 1 -->
@@ -99,7 +109,7 @@
 
     <script src="js/app.js"></script>
     <script src="js/searchFilter.js"></script>
-    <script src="js/baguetteBox.min.js" async></script>
+    <script src="js/baguetteBox.min.js"></script>
     <script>
       window.addEventListener("load", function () {
         baguetteBox.run(".gallery");
