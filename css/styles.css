@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -17,8 +17,6 @@ input {
 }
 
 .container {
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -26,8 +24,5 @@ input {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
-}
-
-.full-image {
-  position: relative;
+  justify-items: center;
 }
