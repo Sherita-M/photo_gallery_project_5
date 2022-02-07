@@ -5,11 +5,12 @@
 }
 
 input {
-  padding: 20px 550px 20px 15px;
-  margin: 30px 0;
+  padding: 20px 200px 20px 15px;
+  width: 100%;
+  margin: 30px auto;
   color: #dfdfdf;
   border: 2px solid #dfdfdf;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 ::placeholder {
@@ -18,15 +19,13 @@ input {
 
 .container {
   text-align: center;
+  max-width: 1024px;
 }
 
 .gallery {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px 1px;
   justify-items: center;
-}
-
-img {
-  width: 100%;
 }
